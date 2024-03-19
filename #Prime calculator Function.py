@@ -1,9 +1,7 @@
-
-#collecting a number from user
+# collecting a number from user
 print("please input number for testing")
-num = input()
-num = int(num)
-#calling the function
+num = int(input())
+# calling the function
 divisable = int(2)
 for divisable in range(num):
     if num % divisable == 0:
