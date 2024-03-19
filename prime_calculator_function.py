@@ -23,7 +23,10 @@ def prime(numlis):
 # collecting a number from user
 print("please input number for testing")
 num = input()
-numlist = num.split(" ")
+if ", " in num
+    numlist = num.split(", ")
+else:
+    numlist = num.split(" ")
 print(numlist)
 # calling the function
 print(prime(numlist))
