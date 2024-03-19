@@ -6,7 +6,7 @@ num = int(num)
 #calling the function
 divisable = int(2)
 for divisable in range(num):
-    if num / divisable == 0:
+    if num % divisable == 0:
         print(divisable)
         divisable + 1
     else:
