@@ -1,3 +1,5 @@
+"""Module providing a function printing prime numbers."""
+
 # collecting a number from user
 print("please input number for testing")
 num = int(input())
