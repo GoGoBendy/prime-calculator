@@ -1,18 +1,23 @@
-"""Module providing a function printing prime numbers."""
+"""Module providing a function printing prime numbers from a list."""
+
+
+def prime(numb):
+    """function providing list of primes from list"""
+    div = True
+    for divisable in range(2, numb):
+        if numb % divisable == 0:
+            divisable += 1
+            div = False
+        else:
+            divisable += 1
+    if div is True:
+        print(f"{numb} is a prime")
+    else:
+        print(f"{numb} is not a prime")
+
 
 # collecting a number from user
 print("please input number for testing")
 num = int(input())
 # calling the function
-DIVISABLE = int(0)
-DIV = True
-for DIVISABLE in range(2, num):
-    if num % DIVISABLE == 0:
-        DIVISABLE += 1
-        DIV = False
-    else:
-        DIVISABLE += 1
-if DIV is True:
-    print(f"{num} is a prime")
-else:
-    print(f"{num} is not a prime")
+print(prime(num))
