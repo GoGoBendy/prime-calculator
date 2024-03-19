@@ -21,11 +21,10 @@ def prime(numlis):
 
 
 # collecting a number from user
-print("please input number for testing")
-num = input()
+num = input("please input number for testing >")
 if ", " in num:
     numlist = num.split(", ")
 else:
     numlist = num.split(" ")
 # calling the function
-print(prime(numlist))
+prime(prime(numlist))
