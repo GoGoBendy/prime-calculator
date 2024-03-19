@@ -23,7 +23,7 @@ def prime(numlis):
 # collecting a number from user
 print("please input number for testing")
 num = input()
-if ", " in num
+if ", " in num:
     numlist = num.split(", ")
 else:
     numlist = num.split(" ")
