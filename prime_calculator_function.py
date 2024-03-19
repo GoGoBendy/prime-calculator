@@ -5,8 +5,8 @@ print("please input number for testing")
 num = int(input())
 # calling the function
 DIVISABLE = int(2)
-for DIVISABLE in range(num):
-    if num % DIVISABLE == 0:
+for DIVISABLE in range(1, num):
+    if num % DIVISABLE == 1:
         print(DIVISABLE)
         DIVISABLE += 1
     else:
