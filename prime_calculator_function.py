@@ -4,11 +4,15 @@
 print("please input number for testing")
 num = int(input())
 # calling the function
-DIVISABLE = int(2)
-for DIVISABLE in range(1, num):
-    if num % DIVISABLE == 1:
-        print(DIVISABLE)
+DIVISABLE = int(0)
+DIV = True
+for DIVISABLE in range(2, num):
+    if num % DIVISABLE == 0:
         DIVISABLE += 1
+        DIV = False
     else:
-        print(f"So far good {DIVISABLE}")
         DIVISABLE += 1
+if DIV is True:
+    print(f"{num} is a prime")
+else:
+    print(f"{num} is not a prime")
