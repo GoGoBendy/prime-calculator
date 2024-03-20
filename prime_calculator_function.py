@@ -1,18 +1,30 @@
-"""Module providing a function printing prime numbers."""
+"""Module providing a function printing prime numbers from a list."""
+
+
+# function to return prime numbers from list
+def prime(numlis):
+    """function providing list of primes from list"""
+    numberlist = []
+    for numbe in numlis:
+        numb = int(numbe)
+        div = True
+        for divisable in range(2, numb):
+            if numb % divisable == 0:
+                divisable += 1
+                div = False
+            else:
+                divisable += 1
+        if div is True:
+            numberlist.append(numbe)
+    numberliststr = " ".join(numberlist)
+    return numberliststr
+
 
 # collecting a number from user
-print("please input number for testing")
-num = int(input())
-# calling the function
-DIVISABLE = int(0)
-DIV = True
-for DIVISABLE in range(2, num):
-    if num % DIVISABLE == 0:
-        DIVISABLE += 1
-        DIV = False
-    else:
-        DIVISABLE += 1
-if DIV is True:
-    print(f"{num} is a prime")
+num = input("please input number for testing >")
+if ", " in num:
+    numlist = num.split(", ")
 else:
-    print(f"{num} is not a prime")
+    numlist = num.split(" ")
+# calling the function
+prime(prime(numlist))
