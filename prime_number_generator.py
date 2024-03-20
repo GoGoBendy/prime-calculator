@@ -2,29 +2,35 @@
 
 
 # function to return prime numbers from list
-def prime(num):
-    """function providing list of primes generated"""
+def prime(numlis):
+    """function verifying if a number is prime"""
     numberlist = []
-    numb = 1
-    numbe = 0
-    divisable = 0
-    while numbe != num:
-        div = True
-        for divisable in range(2, numb):
-            if numb % divisable == 0:
-                divisable += 1
-                div = False
-                numbe += 1
-            else:
-                divisable += 1
-                numbe += 1
-        if div is True:
-            numberlist.append(divisable)
+    numb = int(numlis)
+    div = True
+    for divisable in range(2, numb):
+        if numb % divisable == 0:
+            divisable += 1
+            div = False
+        else:
+            divisable += 1
+    if div is True:
+        nume = str(numlis)
+        numberlist.append(nume)
     numberliststr = " ".join(numberlist)
     return numberliststr
+
+
+def generator(number):
+    """function to send generated numbers for verification"""
+    nums = 0
+    numlist = []
+    while nums != number:
+        numlist.append(prime(nums))
+        nums += 1
+    return ", ".join(numlist)
 
 
 # collecting a number from user
 num = int(input("how many primes would you like to generate? "))
 # calling the function
-prime(prime(num))
+print(generator(num))
