@@ -26,7 +26,7 @@ while non == False:
     num = input("please input number for testing >")
     if ", " in num:
         numlist = num.split(", ")
-    elif "exit" in num:
+    elif num == "exit":
         non = True
     else:
         numlist = num.split(" ")
