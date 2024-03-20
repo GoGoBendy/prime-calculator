@@ -25,12 +25,14 @@ def generator(number):
     nums = 0
     numlist = []
     while nums != number:
-        numlist.append(prime(nums))
+        nono = prime(nums)
+        if nono != "":
+            numlist.append(prime(nums))
         nums += 1
     return ", ".join(numlist)
 
 
 # collecting a number from user
-num = int(input("how many primes would you like to generate? "))
+num = int(input("what number would you like the generate primes to? "))
 # calling the function
 print(generator(num))
