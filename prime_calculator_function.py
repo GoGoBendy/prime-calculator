@@ -20,11 +20,12 @@ def prime(numlis):
     return numberliststr
 
 
-# collecting a number from user
-num = input("please input number for testing >")
-if ", " in num:
-    numlist = num.split(", ")
-else:
-    numlist = num.split(" ")
-# calling the function
-prime(prime(numlist))
+while True:
+    # collecting a number from user
+    num = input("please input number for testing >")
+    if ", " in num:
+        numlist = num.split(", ")
+    else:
+        numlist = num.split(" ")
+    # calling the function
+    prime(prime(numlist))

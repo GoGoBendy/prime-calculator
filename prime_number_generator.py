@@ -32,7 +32,8 @@ def generator(number):
     return ", ".join(numlist)
 
 
-# collecting a number from user
-num = int(input("what number would you like the generate primes to? "))
-# calling the function
-print(generator(num))
+while True:
+    # collecting a number from user
+    num = int(input("what number would you like the generate primes to? "))
+    # calling the function
+    print(generator(num))
