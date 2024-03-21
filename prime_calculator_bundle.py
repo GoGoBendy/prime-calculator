@@ -90,7 +90,7 @@ def generator_deluxe_cal():
     # collecting a number from user
     num = int(input("how many primes would you like to generate? "))
     # calling the function
-    print(generator(num))
+    print(generator_deluxe(num))
 
 
 NON = False
@@ -99,8 +99,8 @@ while NON is False:
     if numy == "calculator":
         print(function_call())
     elif numy == "generator":
-        print(generator_call)
+        print(generator_call())
     elif numy == "generator deluxe":
-        print(generator_deluxe_cal)
+        print(generator_deluxe_cal())
     elif numy == "exit":
         NON = True
