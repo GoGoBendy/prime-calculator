@@ -28,7 +28,8 @@ while NON is False:
         numlist = num.split(", ")
     elif num == "exit":
         NON = True
-    else:
+    elif " " in num:
         numlist = num.split(" ")
-    # calling the function
-    print(prime(numlist))
+    else:
+        num2 = int(num)
+        print(generator(num2))

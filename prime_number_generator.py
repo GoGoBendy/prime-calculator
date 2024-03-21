@@ -35,8 +35,9 @@ def generator(number):
 NON = False
 while NON is False:
     # collecting a number from user
-    num = int(input("what number would you like the generate primes to? "))
+    num = input("what number would you like the generate primes to? ")
     if num == "exit":
         NON = True
-    # calling the function
-    print(generator(num))
+    else:
+        num2 = int(num)
+        print(generator(num2))
