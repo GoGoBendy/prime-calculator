@@ -29,7 +29,7 @@ def function_call():
     else:
         numlist = num1.split(" ")
     # calling the function
-    prime_function(numlist)
+    print(prime_function(numlist))
 
 
 # function to return prime numbers from list

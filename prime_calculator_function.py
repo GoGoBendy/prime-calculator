@@ -31,4 +31,4 @@ while NON is False:
     else:
         numlist = num.split(" ")
     # calling the function
-    prime(prime(numlist))
+    print(prime(numlist))
