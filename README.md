@@ -6,4 +6,4 @@
 <p>prime_calculator_bundle is a bundle of all the other programs</p>
 <h2>Commands</h2>
 <p>To exit the program when asked to input a number or list type "exit" unless you're using prime_calculator_bundle in which case you use the command when selecting what program to use</p>
-<p>https://github.com/GoGoBendy/prime-calculator/</p>
+<a href="(https://github.com/GoGoBendy/prime-calculator/)https://github.com/GoGoBendy/prime-calculator/">Repository can be found here</a>
