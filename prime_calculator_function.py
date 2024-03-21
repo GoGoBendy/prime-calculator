@@ -32,4 +32,4 @@ while NON is False:
         numlist = num.split(" ")
     else:
         num2 = int(num)
-        print(generator(num2))
+        print(prime(num2))
