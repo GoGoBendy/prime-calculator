@@ -20,14 +20,14 @@ def prime(numlis):
     return numberliststr
 
 
-non = False
-while non == False:
+NON = False
+while NON is False:
     # collecting a number from user
     num = input("please input number for testing >")
     if ", " in num:
         numlist = num.split(", ")
     elif num == "exit":
-        non = True
+        NON = True
     else:
         numlist = num.split(" ")
     # calling the function
